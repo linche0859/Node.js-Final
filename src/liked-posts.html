@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>追蹤名單</title>
+    <title>我按讚的貼文</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -93,17 +93,17 @@
     >
       <section class="lg:mr-[27px] lg:flex-grow">
         <h2
-          class="relative isolate after:absolute after:right-1 after:top-1 after:z-[-1] after:h-full after:w-full after:border-2 after:border-black-100 after:content-['']"
+          class="relative isolate mb-4 after:absolute after:right-1 after:top-1 after:z-[-1] after:h-full after:w-full after:border-2 after:border-black-100 after:content-['']"
         >
           <div
-            class="mb-8 border-2 border-black-100 bg-white py-[18px] text-center font-azeret text-xl font-bold text-black-100"
+            class="border-2 border-black-100 bg-white py-[18px] text-center font-azeret text-xl font-bold text-black-100"
           >
-            追蹤名單
+            我按讚的貼文
           </div>
         </h2>
         <ul class="space-y-4">
           <li
-            class="flex items-center rounded-lg border-2 border-black-100 py-[18px] px-4 shadow-card"
+            class="flex items-center rounded-lg border-2 border-black-100 py-[18px] pl-4 pr-10 shadow-card"
           >
             <img
               src="../static/images/track-list/user.png"
@@ -116,12 +116,26 @@
                 class="font-bold text-black-100 hover:text-primary hover:underline"
                 >愛爾敏</a
               >
-              <div class="text-sm text-gray-300">追蹤時間：2022/1/10 12:00</div>
+              <div class="text-sm text-gray-300">
+                發文時間：<span class="font-baloo">2022/2/22 12:00</span>
+              </div>
             </div>
-            <div class="self-end text-sm text-black-100">您已追蹤 90 天！</div>
+            <button
+              class="mr-[37px] flex flex-col items-center text-xl leading-none text-primary"
+            >
+              <i class="fa-regular fa-thumbs-up"></i>
+              <span class="mt-1 text-sm font-bold text-black-100">取消</span>
+            </button>
+            <a
+              href="./personal-wall.html"
+              class="flex flex-col items-center text-xl leading-none text-black-100"
+            >
+              <i class="fa-regular fa-circle-right"></i>
+              <span class="mt-1 text-sm font-bold">查看</span>
+            </a>
           </li>
           <li
-            class="flex items-center rounded-lg border-2 border-black-100 py-[18px] px-4 shadow-card"
+            class="flex items-center rounded-lg border-2 border-black-100 py-[18px] pl-4 pr-10 shadow-card"
           >
             <img
               src="../static/images/track-list/user1.png"
@@ -132,14 +146,28 @@
               <a
                 href="./personal-wall.html"
                 class="font-bold text-black-100 hover:text-primary hover:underline"
-                >李維</a
+                >愛爾敏</a
               >
-              <div class="text-sm text-gray-300">追蹤時間：2022/1/10 12:00</div>
+              <div class="text-sm text-gray-300">
+                發文時間：<span class="font-baloo">2022/2/11 12:00</span>
+              </div>
             </div>
-            <div class="self-end text-sm text-black-100">您已追蹤 90 天！</div>
+            <button
+              class="mr-[37px] flex flex-col items-center text-xl leading-none text-primary"
+            >
+              <i class="fa-regular fa-thumbs-up"></i>
+              <span class="mt-1 text-sm font-bold text-black-100">取消</span>
+            </button>
+            <a
+              href="./personal-wall.html"
+              class="flex flex-col items-center text-xl leading-none text-black-100"
+            >
+              <i class="fa-regular fa-circle-right"></i>
+              <span class="mt-1 text-sm font-bold">查看</span>
+            </a>
           </li>
           <li
-            class="flex items-center rounded-lg border-2 border-black-100 py-[18px] px-4 shadow-card"
+            class="flex items-center rounded-lg border-2 border-black-100 py-[18px] pl-4 pr-10 shadow-card"
           >
             <img
               src="../static/images/track-list/user2.png"
@@ -150,14 +178,28 @@
               <a
                 href="./personal-wall.html"
                 class="font-bold text-black-100 hover:text-primary hover:underline"
-                >米歇爾</a
+                >米卡莎</a
               >
-              <div class="text-sm text-gray-300">追蹤時間：2022/1/10 12:00</div>
+              <div class="text-sm text-gray-300">
+                發文時間：<span class="font-baloo">2022/1/22 12:00</span>
+              </div>
             </div>
-            <div class="self-end text-sm text-black-100">您已追蹤 90 天！</div>
+            <button
+              class="mr-[37px] flex flex-col items-center text-xl leading-none text-primary"
+            >
+              <i class="fa-regular fa-thumbs-up"></i>
+              <span class="mt-1 text-sm font-bold text-black-100">取消</span>
+            </button>
+            <a
+              href="./personal-wall.html"
+              class="flex flex-col items-center text-xl leading-none text-black-100"
+            >
+              <i class="fa-regular fa-circle-right"></i>
+              <span class="mt-1 text-sm font-bold">查看</span>
+            </a>
           </li>
           <li
-            class="flex items-center rounded-lg border-2 border-black-100 py-[18px] px-4 shadow-card"
+            class="flex items-center rounded-lg border-2 border-black-100 py-[18px] pl-4 pr-10 shadow-card"
           >
             <img
               src="../static/images/track-list/user3.png"
@@ -168,11 +210,89 @@
               <a
                 href="./personal-wall.html"
                 class="font-bold text-black-100 hover:text-primary hover:underline"
-                >米卡莎</a
+                >李維</a
               >
-              <div class="text-sm text-gray-300">追蹤時間：2022/1/10 12:00</div>
+              <div class="text-sm text-gray-300">
+                發文時間：<span class="font-baloo">2022/1/14 12:00</span>
+              </div>
             </div>
-            <div class="self-end text-sm text-black-100">您已追蹤 90 天！</div>
+            <button
+              class="mr-[37px] flex flex-col items-center text-xl leading-none text-primary"
+            >
+              <i class="fa-regular fa-thumbs-up"></i>
+              <span class="mt-1 text-sm font-bold text-black-100">取消</span>
+            </button>
+            <a
+              href="./personal-wall.html"
+              class="flex flex-col items-center text-xl leading-none text-black-100"
+            >
+              <i class="fa-regular fa-circle-right"></i>
+              <span class="mt-1 text-sm font-bold">查看</span>
+            </a>
+          </li>
+          <li
+            class="flex items-center rounded-lg border-2 border-black-100 py-[18px] pl-4 pr-10 shadow-card"
+          >
+            <img
+              src="../static/images/track-list/user4.png"
+              alt="avatar"
+              class="mr-4 flex-shrink-0"
+            />
+            <div class="flex-grow">
+              <a
+                href="./personal-wall.html"
+                class="font-bold text-black-100 hover:text-primary hover:underline"
+                >米歇爾</a
+              >
+              <div class="text-sm text-gray-300">
+                發文時間：<span class="font-baloo">2022/1/10 12:00</span>
+              </div>
+            </div>
+            <button
+              class="mr-[37px] flex flex-col items-center text-xl leading-none text-primary"
+            >
+              <i class="fa-regular fa-thumbs-up"></i>
+              <span class="mt-1 text-sm font-bold text-black-100">取消</span>
+            </button>
+            <a
+              href="./personal-wall.html"
+              class="flex flex-col items-center text-xl leading-none text-black-100"
+            >
+              <i class="fa-regular fa-circle-right"></i>
+              <span class="mt-1 text-sm font-bold">查看</span>
+            </a>
+          </li>
+          <li
+            class="flex items-center rounded-lg border-2 border-black-100 py-[18px] pl-4 pr-10 shadow-card"
+          >
+            <img
+              src="../static/images/track-list/user.png"
+              alt="avatar"
+              class="mr-4 flex-shrink-0"
+            />
+            <div class="flex-grow">
+              <a
+                href="./personal-wall.html"
+                class="font-bold text-black-100 hover:text-primary hover:underline"
+                >愛爾敏</a
+              >
+              <div class="text-sm text-gray-300">
+                發文時間：<span class="font-baloo">2022/1/1 12:00</span>
+              </div>
+            </div>
+            <button
+              class="mr-[37px] flex flex-col items-center text-xl leading-none text-primary"
+            >
+              <i class="fa-regular fa-thumbs-up"></i>
+              <span class="mt-1 text-sm font-bold text-black-100">取消</span>
+            </button>
+            <a
+              href="./personal-wall.html"
+              class="flex flex-col items-center text-xl leading-none text-black-100"
+            >
+              <i class="fa-regular fa-circle-right"></i>
+              <span class="mt-1 text-sm font-bold">查看</span>
+            </a>
           </li>
         </ul>
       </section>
@@ -224,7 +344,7 @@
           </li>
           <li>
             <a
-              href=".liked-posts.html"
+              href="./liked-posts.html"
               class="group block text-black-100 hover:text-primary"
             >
               <span

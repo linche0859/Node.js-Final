@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>追蹤名單</title>
+    <title>個人牆</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -92,87 +92,114 @@
       class="px-3 pt-4 pb-[102px] lg:mx-auto lg:flex lg:max-w-[869px] lg:px-0 lg:py-[49px]"
     >
       <section class="lg:mr-[27px] lg:flex-grow">
-        <h2
-          class="relative isolate after:absolute after:right-1 after:top-1 after:z-[-1] after:h-full after:w-full after:border-2 after:border-black-100 after:content-['']"
+        <div
+          class="relative isolate mb-4 after:absolute after:right-1 after:top-1 after:z-[-1] after:h-full after:w-full after:rounded-lg after:border-2 after:border-black-100 after:content-['']"
         >
-          <div
-            class="mb-8 border-2 border-black-100 bg-white py-[18px] text-center font-azeret text-xl font-bold text-black-100"
-          >
-            追蹤名單
+          <div class="flex rounded-lg border-2 border-black-100 bg-white">
+            <div class="w-[15%] flex-shrink-0 border-r-2 border-black-100">
+              <div
+                class="h-full rounded-l-lg bg-cover bg-center"
+                style="
+                  background-image: url(https://picsum.photos/id/237/80/80);
+                "
+              ></div>
+            </div>
+            <div class="flex flex-grow items-center p-4">
+              <div class="flex-grow">
+                <a
+                  href="./personal-wall.html"
+                  class="font-bold hover:text-primary hover:underline"
+                  >阿爾敏</a
+                >
+                <p>987,987 人追蹤</p>
+              </div>
+              <button
+                class="flex-shrink-0 rounded-lg border-2 border-black-100 bg-yellow-100 px-8 font-bold leading-8 text-black-100 shadow-btn"
+                data-id="follow"
+              >
+                追蹤
+              </button>
+            </div>
           </div>
-        </h2>
-        <ul class="space-y-4">
-          <li
-            class="flex items-center rounded-lg border-2 border-black-100 py-[18px] px-4 shadow-card"
-          >
-            <img
-              src="../static/images/track-list/user.png"
-              alt="avatar"
-              class="mr-4 flex-shrink-0"
+        </div>
+        <div class="mb-3 lg:flex lg:space-x-3">
+          <div class="relative mb-[6px] lg:mb-0 lg:w-[29.26%] lg:flex-shrink-0">
+            <select
+              class="block w-full appearance-none border-2 border-black-100 bg-white py-3 pl-4 pr-[28px] font-azeret leading-[22px] text-black-100"
+            >
+              <option value="" disabled>請選擇</option>
+              <option value="new" selected>最新貼文</option>
+            </select>
+            <i
+              class="fa-solid fa-angle-down absolute right-4 top-1/2 -translate-y-1/2 text-black-100"
+            ></i>
+          </div>
+          <div class="flex lg:flex-grow">
+            <input
+              type="text"
+              class="flex-grow rounded-none border-y-2 border-l-2 border-black-100 py-3 px-4 font-azeret leading-[22px] text-black-100"
+              placeholder="搜尋貼文"
             />
-            <div class="flex-grow">
-              <a
-                href="./personal-wall.html"
-                class="font-bold text-black-100 hover:text-primary hover:underline"
-                >愛爾敏</a
-              >
-              <div class="text-sm text-gray-300">追蹤時間：2022/1/10 12:00</div>
+            <button
+              class="w-[46px] flex-shrink-0 border-2 border-black-100 bg-primary text-xl text-white"
+            >
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+          </div>
+        </div>
+        <ul class="space-y-5">
+          <li class="rounded-lg border-2 border-black-100 p-6 shadow-card">
+            <div class="mb-4 flex items-center">
+              <img
+                src="https://picsum.photos/id/237/45/45"
+                alt="avatar"
+                class="mr-4 h-[45px] w-[45px] flex-shrink-0 rounded-full border-2 border-black-100 object-cover"
+              />
+              <div class="flex-grow">
+                <a
+                  href="./personal-wall.html"
+                  class="font-bold text-black-100 hover:text-primary hover:underline"
+                  >阿爾敏</a
+                >
+                <div class="font-baloo text-xs leading-5 text-gray-300">
+                  2022/1/10 12:00
+                </div>
+              </div>
             </div>
-            <div class="self-end text-sm text-black-100">您已追蹤 90 天！</div>
+            <p class="text-black-100">
+              今天找到一張大海的照片<br />太美拉～～～
+            </p>
+            <picture>
+              <source
+                media="(min-width: 1024px)"
+                srcset="../static/images/personal-wall/post-photo@2x.png"
+              />
+              <img
+                class="mt-4"
+                src="../static/images/personal-wall/post-photo.png"
+                alt="post photo"
+              />
+            </picture>
           </li>
-          <li
-            class="flex items-center rounded-lg border-2 border-black-100 py-[18px] px-4 shadow-card"
-          >
-            <img
-              src="../static/images/track-list/user1.png"
-              alt="avatar"
-              class="mr-4 flex-shrink-0"
-            />
-            <div class="flex-grow">
-              <a
-                href="./personal-wall.html"
-                class="font-bold text-black-100 hover:text-primary hover:underline"
-                >李維</a
-              >
-              <div class="text-sm text-gray-300">追蹤時間：2022/1/10 12:00</div>
+          <li class="rounded-lg border-2 border-black-100 p-6 shadow-card">
+            <div class="mb-4 flex items-center">
+              <img
+                src="https://picsum.photos/id/237/45/45"
+                alt="avatar"
+                class="mr-4 h-[45px] w-[45px] flex-shrink-0 rounded-full border-2 border-black-100 object-cover"
+              />
+              <div class="flex-grow">
+                <a
+                  href="./personal-wall.html"
+                  class="font-bold text-black-100 hover:text-primary hover:underline"
+                  >阿爾敏</a
+                >
+                <div class="font-baloo text-xs leading-5 text-gray-300">
+                  2022/1/10 12:00
+                </div>
+              </div>
             </div>
-            <div class="self-end text-sm text-black-100">您已追蹤 90 天！</div>
-          </li>
-          <li
-            class="flex items-center rounded-lg border-2 border-black-100 py-[18px] px-4 shadow-card"
-          >
-            <img
-              src="../static/images/track-list/user2.png"
-              alt="avatar"
-              class="mr-4 flex-shrink-0"
-            />
-            <div class="flex-grow">
-              <a
-                href="./personal-wall.html"
-                class="font-bold text-black-100 hover:text-primary hover:underline"
-                >米歇爾</a
-              >
-              <div class="text-sm text-gray-300">追蹤時間：2022/1/10 12:00</div>
-            </div>
-            <div class="self-end text-sm text-black-100">您已追蹤 90 天！</div>
-          </li>
-          <li
-            class="flex items-center rounded-lg border-2 border-black-100 py-[18px] px-4 shadow-card"
-          >
-            <img
-              src="../static/images/track-list/user3.png"
-              alt="avatar"
-              class="mr-4 flex-shrink-0"
-            />
-            <div class="flex-grow">
-              <a
-                href="./personal-wall.html"
-                class="font-bold text-black-100 hover:text-primary hover:underline"
-                >米卡莎</a
-              >
-              <div class="text-sm text-gray-300">追蹤時間：2022/1/10 12:00</div>
-            </div>
-            <div class="self-end text-sm text-black-100">您已追蹤 90 天！</div>
+            <p class="text-black-100">各位我有一個作戰計畫</p>
           </li>
         </ul>
       </section>
@@ -224,7 +251,7 @@
           </li>
           <li>
             <a
-              href=".liked-posts.html"
+              href="./liked-posts.html"
               class="group block text-black-100 hover:text-primary"
             >
               <span
@@ -246,5 +273,16 @@
         </ul>
       </nav>
     </main>
+    <script>
+      const followBtn = document.querySelector('[data-id="follow"]');
+      let isFollowed = false;
+      followBtn.addEventListener('click', (e) => {
+        const { target } = e;
+        isFollowed = !isFollowed;
+        target.innerText = isFollowed ? '取消追蹤' : '追蹤';
+        target.classList.remove('bg-yellow-100', 'bg-secondary');
+        target.classList.add(isFollowed ? 'bg-secondary' : 'bg-yellow-100');
+      });
+    </script>
   </body>
 </html>
