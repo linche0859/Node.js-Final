@@ -2,6 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
-* {
-  font-family: 'Noto Sans TC', sans-serif;
+@layer base {
+  body {
+    font-family: 'Noto Sans TC', sans-serif;
+  }
+  ::placeholder {
+    @apply text-gray-300;
+  }
 }
